@@ -77,3 +77,5 @@ https://ershivamkumar.github.io/japa-counter
 
 **Shivam Kumar**
 BTech – Computer Science Engineering
+
+Site deployed with GitHub Pages.
