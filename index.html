@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japa Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h2 class="title">Japa Counter</h2>
+        <!-- Music Section -->
+        <div class="music-section">
+            <div class="songs">
+                <button class="song" data-src="Om Gauri Shankaraya Namah 108 Times.mp3">ॐ गौरी शंकराय नमः</button>
+                <button class="song" data-src="Om Namah Shivaya 108 Times Om Namah Shivaya.mp3">ॐ नमः शिवाय</button>
+                <button class="song" data-src="Radhe Radhe 108 Times.mp3">राधे राधे</button>
+                <button class="song" data-src="SHRI RAM JAI RAM JAI JAI RAM 108 times.mp3">श्री राम जय राम जय जय राम</button>
+            </div>
+            <button id="mute">🔊</button>
+        </div>
+        <audio id="music" loop></audio>
+        <!-- Stats -->
+        <div class="stats">
+            <div class="box">
+                <p>Malas</p>
+                <h2 id="mala">0</h2>
+            </div>
+            <div class="circle">
+                
+                <svg width="220" height="220">
+                    <circle cx="110" cy="110" r="95"
+                    stroke="#eee" stroke-width="14" fill="none"/>
+                    
+                    <circle id="progress"
+                    cx="110" cy="110" r="95"
+                    stroke="#7a3cff"
+                    stroke-width="14"
+                    fill="none"
+                    stroke-dasharray="596"
+                    stroke-dashoffset="596"/>
+                </svg>
+                
+                <div class="count" id="count">0</div>
+            
+            </div>
+            
+            <div class="box">
+                <p>Total</p>
+                <h2 id="total">0</h2>
+            </div>
+        </div>
+        
+        <div class="mantra">
+            ॐ गौरी शंकराय नमः
+        </div>
+        
+        <button id="tap" class="tap">
+                🙏 
+            TAP TO JAP
+        </button>
+    
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

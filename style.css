@@ -1,0 +1,82 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f5f6fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.app{
+    width:92%;
+    max-width:420px;
+    text-align:center;
+}
+
+.music-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.songs{
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;
+}
+
+.song{
+    border:none;
+    background:#e6e6e6;
+    padding:6px 10px;
+    border-radius:15px;
+    font-size:12px;
+}
+
+.song.active{
+    background:#7a3cff;
+    color:white;
+}
+
+#mute{
+    border:none;
+    background:none;
+    font-size:20px;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.circle{
+    position:relative;
+}
+
+.count{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:30px;
+    font-weight:bold;
+}
+
+.mantra{
+    margin-top:20px;
+    font-size:22px;
+}
+
+.tap{
+    margin-top:25px;
+    width:100%;
+    padding:28px;
+    font-size:22px;
+    border:none;
+    border-radius:20px;
+    color:white;
+    background:linear-gradient(135deg,#8e2de2,#4a00e0);
+}
